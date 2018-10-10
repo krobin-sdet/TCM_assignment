@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 12 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Default Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_Suite" class="navigator-link ">
+                    <span>temp-testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">32 methods, 12 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="clickMovieLinkFiveTest">clickMovieLinkFiveTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFiveOneActor2Test">verifyMovieFiveOneActor2Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFiveOverviewTest">verifyMovieFiveOverviewTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFivePageTitleTest">verifyMovieFivePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFourOneActor1Test">verifyMovieFourOneActor1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFourOneActor2Test">verifyMovieFourOneActor2Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFourOverviewTest">verifyMovieFourOverviewTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieFourPageTitleTest">verifyMovieFourPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMoviePageTitleTest">verifyMoviePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovievOneActor1Test">verifyMovievOneActor1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyReleaseFiveDateOneTest">verifyReleaseFiveDateOneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyReleaseFourDateOneTest">verifyReleaseFourDateOneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="clickMovieLinkFourTest">clickMovieLinkFourTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="clickMovieLinkOneTest">clickMovieLinkOneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="clickMovieLinkThreeTest">clickMovieLinkThreeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="clickMovieLinkTwoTest">clickMovieLinkTwoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="loadTestUrlTest">loadTestUrlTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieOneActor1Test">verifyMovieOneActor1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieOneActor2Test">verifyMovieOneActor2Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieOverviewTest">verifyMovieOverviewTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieThreeOneActor1Test">verifyMovieThreeOneActor1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieThreeOneActor2Test">verifyMovieThreeOneActor2Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieThreeOverviewTest">verifyMovieThreeOverviewTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieThreePageTitleTest">verifyMovieThreePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieTwoOneActor1Test">verifyMovieTwoOneActor1Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieTwoOneActor2Test">verifyMovieTwoOneActor2Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieTwoOverviewTest">verifyMovieTwoOverviewTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyMovieTwoPageTitleTest">verifyMovieTwoPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyPageTitleTest">verifyPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyReleaseDateOneTest">verifyReleaseDateOneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyReleaseThreeDateOneTest">verifyReleaseThreeDateOneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.tcm.TCMDemoTest" class="method navigator-link" hash-for-method="verifyReleaseTwoDateOneTest">verifyReleaseTwoDateOneTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tcm.TCMDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMovieLinkFiveTest">
+                  </a> <!-- clickMovieLinkFiveTest -->
+                  <span class="method-name">clickMovieLinkFiveTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;The Secret Garden (1949)&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=The Secret Garden (1949)}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.clickMovieLinkFive(TCMTests.java:209)
+	at com.tcm.TCMDemoTest.clickMovieLinkFiveTest(TCMDemoTest.java:159)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFiveOneActor2Test">
+                  </a> <!-- verifyMovieFiveOneActor2Test -->
+                  <span class="method-name">verifyMovieFiveOneActor2Test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Aubrey Mather&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Aubrey Mather}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFiveActor2(TCMTests.java:236)
+	at com.tcm.TCMDemoTest.verifyMovieFiveOneActor2Test(TCMDemoTest.java:179)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFiveOverviewTest">
+                  </a> <!-- verifyMovieFiveOverviewTest -->
+                  <span class="method-name">verifyMovieFiveOverviewTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [A small-town girl hits the big city in search of romance Roaring Twenties style.] but found [An orphaned girl changes the lives of those she encounters at a remote estate.]
+	at com.tcm.TCMTests.verifyMovieFiveOverview(TCMTests.java:225)
+	at com.tcm.TCMDemoTest.verifyMovieFiveOverviewTest(TCMDemoTest.java:169)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFivePageTitleTest">
+                  </a> <!-- verifyMovieFivePageTitleTest -->
+                  <span class="method-name">verifyMovieFivePageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [THOROUGHLY MODERN MILLIE] but found [THE SECRET GARDEN]
+	at com.tcm.TCMTests.verifyMovieFivePageTitle(TCMTests.java:219)
+	at com.tcm.TCMDemoTest.verifyMovieFivePageTitleTest(TCMDemoTest.java:164)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFourOneActor1Test">
+                  </a> <!-- verifyMovieFourOneActor1Test -->
+                  <span class="method-name">verifyMovieFourOneActor1Test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Hampton Fancher&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Hampton Fancher}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFourActor1(TCMTests.java:187)
+	at com.tcm.TCMDemoTest.verifyMovieFourOneActor1Test(TCMDemoTest.java:142)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFourOneActor2Test">
+                  </a> <!-- verifyMovieFourOneActor2Test -->
+                  <span class="method-name">verifyMovieFourOneActor2Test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pamela Austin&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Pamela Austin}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFourActor2(TCMTests.java:193)
+	at com.tcm.TCMDemoTest.verifyMovieFourOneActor2Test(TCMDemoTest.java:147)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFourOverviewTest">
+                  </a> <!-- verifyMovieFourOverviewTest -->
+                  <span class="method-name">verifyMovieFourOverviewTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [A small-town girl hits the big city in search of romance Roaring Twenties style.] but found [A rebellious teacher moves to Rome and finds love.]
+	at com.tcm.TCMTests.verifyMovieFourOverview(TCMTests.java:182)
+	at com.tcm.TCMDemoTest.verifyMovieFourOverviewTest(TCMDemoTest.java:137)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieFourPageTitleTest">
+                  </a> <!-- verifyMovieFourPageTitleTest -->
+                  <span class="method-name">verifyMovieFourPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [] but found [ROME ADVENTURE]
+	at com.tcm.TCMTests.verifyMovieFourPageTitle(TCMTests.java:176)
+	at com.tcm.TCMDemoTest.verifyMovieFourPageTitleTest(TCMDemoTest.java:132)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMoviePageTitleTest">
+                  </a> <!-- verifyMoviePageTitleTest -->
+                  <span class="method-name">verifyMoviePageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [] but found [TO HAVE AND HAVE NOT]
+	at com.tcm.TCMTests.verifyMoviePageTitle(TCMTests.java:50)
+	at com.tcm.TCMDemoTest.verifyMoviePageTitleTest(TCMDemoTest.java:36)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovievOneActor1Test">
+                  </a> <!-- verifyMovievOneActor1Test -->
+                  <span class="method-name">verifyMovievOneActor1Test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Margaret O&apos;Brien&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Margaret O&apos;Brien}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFiveActor1(TCMTests.java:230)
+	at com.tcm.TCMDemoTest.verifyMovievOneActor1Test(TCMDemoTest.java:174)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReleaseFiveDateOneTest">
+                  </a> <!-- verifyReleaseFiveDateOneTest -->
+                  <span class="method-name">verifyReleaseFiveDateOneTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1967] but found [1949]
+	at com.tcm.TCMTests.verifyReleaseDateFive(TCMTests.java:244)
+	at com.tcm.TCMDemoTest.verifyReleaseFiveDateOneTest(TCMDemoTest.java:184)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReleaseFourDateOneTest">
+                  </a> <!-- verifyReleaseFourDateOneTest -->
+                  <span class="method-name">verifyReleaseFourDateOneTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1967] but found [1962]
+	at com.tcm.TCMTests.verifyReleaseDateFour(TCMTests.java:201)
+	at com.tcm.TCMDemoTest.verifyReleaseFourDateOneTest(TCMDemoTest.java:152)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tcm.TCMDemoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMovieLinkFourTest">
+                  </a> <!-- clickMovieLinkFourTest -->
+                  <span class="method-name">clickMovieLinkFourTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMovieLinkOneTest">
+                  </a> <!-- clickMovieLinkOneTest -->
+                  <span class="method-name">clickMovieLinkOneTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMovieLinkThreeTest">
+                  </a> <!-- clickMovieLinkThreeTest -->
+                  <span class="method-name">clickMovieLinkThreeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickMovieLinkTwoTest">
+                  </a> <!-- clickMovieLinkTwoTest -->
+                  <span class="method-name">clickMovieLinkTwoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loadTestUrlTest">
+                  </a> <!-- loadTestUrlTest -->
+                  <span class="method-name">loadTestUrlTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieOneActor1Test">
+                  </a> <!-- verifyMovieOneActor1Test -->
+                  <span class="method-name">verifyMovieOneActor1Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieOneActor2Test">
+                  </a> <!-- verifyMovieOneActor2Test -->
+                  <span class="method-name">verifyMovieOneActor2Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieOverviewTest">
+                  </a> <!-- verifyMovieOverviewTest -->
+                  <span class="method-name">verifyMovieOverviewTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieThreeOneActor1Test">
+                  </a> <!-- verifyMovieThreeOneActor1Test -->
+                  <span class="method-name">verifyMovieThreeOneActor1Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieThreeOneActor2Test">
+                  </a> <!-- verifyMovieThreeOneActor2Test -->
+                  <span class="method-name">verifyMovieThreeOneActor2Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieThreeOverviewTest">
+                  </a> <!-- verifyMovieThreeOverviewTest -->
+                  <span class="method-name">verifyMovieThreeOverviewTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieThreePageTitleTest">
+                  </a> <!-- verifyMovieThreePageTitleTest -->
+                  <span class="method-name">verifyMovieThreePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieTwoOneActor1Test">
+                  </a> <!-- verifyMovieTwoOneActor1Test -->
+                  <span class="method-name">verifyMovieTwoOneActor1Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieTwoOneActor2Test">
+                  </a> <!-- verifyMovieTwoOneActor2Test -->
+                  <span class="method-name">verifyMovieTwoOneActor2Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieTwoOverviewTest">
+                  </a> <!-- verifyMovieTwoOverviewTest -->
+                  <span class="method-name">verifyMovieTwoOverviewTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieTwoPageTitleTest">
+                  </a> <!-- verifyMovieTwoPageTitleTest -->
+                  <span class="method-name">verifyMovieTwoPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitleTest">
+                  </a> <!-- verifyPageTitleTest -->
+                  <span class="method-name">verifyPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReleaseDateOneTest">
+                  </a> <!-- verifyReleaseDateOneTest -->
+                  <span class="method-name">verifyReleaseDateOneTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReleaseThreeDateOneTest">
+                  </a> <!-- verifyReleaseThreeDateOneTest -->
+                  <span class="method-name">verifyReleaseThreeDateOneTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReleaseTwoDateOneTest">
+                  </a> <!-- verifyReleaseTwoDateOneTest -->
+                  <span class="method-name">verifyReleaseTwoDateOneTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/krobinson/Library/Caches/IntelliJIdea2017.3/temp-testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test name=&quot;TCM_assignment&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tcm.TCMDemoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TCM_assignment --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TCM_assignment (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(32);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyMovieFourOneActor1Test')
+data.setCell(0, 2, 'com.tcm.TCMDemoTest')
+data.setCell(0, 3, 5309);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyMovieFiveOneActor2Test')
+data.setCell(1, 2, 'com.tcm.TCMDemoTest')
+data.setCell(1, 3, 5083);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyMovieFourOneActor2Test')
+data.setCell(2, 2, 'com.tcm.TCMDemoTest')
+data.setCell(2, 3, 5063);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickMovieLinkFiveTest')
+data.setCell(3, 2, 'com.tcm.TCMDemoTest')
+data.setCell(3, 3, 5059);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyMovievOneActor1Test')
+data.setCell(4, 2, 'com.tcm.TCMDemoTest')
+data.setCell(4, 3, 5019);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loadTestUrlTest')
+data.setCell(5, 2, 'com.tcm.TCMDemoTest')
+data.setCell(5, 3, 3018);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clickMovieLinkThreeTest')
+data.setCell(6, 2, 'com.tcm.TCMDemoTest')
+data.setCell(6, 3, 1870);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clickMovieLinkOneTest')
+data.setCell(7, 2, 'com.tcm.TCMDemoTest')
+data.setCell(7, 3, 1367);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'clickMovieLinkTwoTest')
+data.setCell(8, 2, 'com.tcm.TCMDemoTest')
+data.setCell(8, 3, 1366);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'clickMovieLinkFourTest')
+data.setCell(9, 2, 'com.tcm.TCMDemoTest')
+data.setCell(9, 3, 987);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyReleaseTwoDateOneTest')
+data.setCell(10, 2, 'com.tcm.TCMDemoTest')
+data.setCell(10, 3, 962);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyMovieTwoPageTitleTest')
+data.setCell(11, 2, 'com.tcm.TCMDemoTest')
+data.setCell(11, 3, 818);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyMovieFourPageTitleTest')
+data.setCell(12, 2, 'com.tcm.TCMDemoTest')
+data.setCell(12, 3, 788);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyReleaseDateOneTest')
+data.setCell(13, 2, 'com.tcm.TCMDemoTest')
+data.setCell(13, 3, 713);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyReleaseThreeDateOneTest')
+data.setCell(14, 2, 'com.tcm.TCMDemoTest')
+data.setCell(14, 3, 648);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyMovieOverviewTest')
+data.setCell(15, 2, 'com.tcm.TCMDemoTest')
+data.setCell(15, 3, 600);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyMoviePageTitleTest')
+data.setCell(16, 2, 'com.tcm.TCMDemoTest')
+data.setCell(16, 3, 431);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyMovieThreePageTitleTest')
+data.setCell(17, 2, 'com.tcm.TCMDemoTest')
+data.setCell(17, 3, 130);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyMovieThreeOverviewTest')
+data.setCell(18, 2, 'com.tcm.TCMDemoTest')
+data.setCell(18, 3, 84);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyMovieThreeOneActor1Test')
+data.setCell(19, 2, 'com.tcm.TCMDemoTest')
+data.setCell(19, 3, 74);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyMovieOneActor1Test')
+data.setCell(20, 2, 'com.tcm.TCMDemoTest')
+data.setCell(20, 3, 66);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyMovieTwoOneActor1Test')
+data.setCell(21, 2, 'com.tcm.TCMDemoTest')
+data.setCell(21, 3, 60);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyMovieOneActor2Test')
+data.setCell(22, 2, 'com.tcm.TCMDemoTest')
+data.setCell(22, 3, 51);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyMovieThreeOneActor2Test')
+data.setCell(23, 2, 'com.tcm.TCMDemoTest')
+data.setCell(23, 3, 50);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyMovieTwoOneActor2Test')
+data.setCell(24, 2, 'com.tcm.TCMDemoTest')
+data.setCell(24, 3, 50);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyMovieTwoOverviewTest')
+data.setCell(25, 2, 'com.tcm.TCMDemoTest')
+data.setCell(25, 3, 42);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyMovieFourOverviewTest')
+data.setCell(26, 2, 'com.tcm.TCMDemoTest')
+data.setCell(26, 3, 39);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyReleaseFourDateOneTest')
+data.setCell(27, 2, 'com.tcm.TCMDemoTest')
+data.setCell(27, 3, 32);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifyReleaseFiveDateOneTest')
+data.setCell(28, 2, 'com.tcm.TCMDemoTest')
+data.setCell(28, 3, 31);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyMovieFivePageTitleTest')
+data.setCell(29, 2, 'com.tcm.TCMDemoTest')
+data.setCell(29, 3, 31);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyMovieFiveOverviewTest')
+data.setCell(30, 2, 'com.tcm.TCMDemoTest')
+data.setCell(30, 3, 30);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyPageTitleTest')
+data.setCell(31, 2, 'com.tcm.TCMDemoTest')
+data.setCell(31, 3, 25);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tcm.TCMDemoTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">loadTestUrlTest</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPageTitleTest</span>
+                <span class="method-start">3066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickMovieLinkOneTest</span>
+                <span class="method-start">3091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMoviePageTitleTest</span>
+                <span class="method-start">4459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieOverviewTest</span>
+                <span class="method-start">4895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieOneActor1Test</span>
+                <span class="method-start">5495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieOneActor2Test</span>
+                <span class="method-start">5562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyReleaseDateOneTest</span>
+                <span class="method-start">5613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickMovieLinkTwoTest</span>
+                <span class="method-start">6327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieTwoPageTitleTest</span>
+                <span class="method-start">7693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieTwoOverviewTest</span>
+                <span class="method-start">8512 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieTwoOneActor1Test</span>
+                <span class="method-start">8555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieTwoOneActor2Test</span>
+                <span class="method-start">8615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyReleaseTwoDateOneTest</span>
+                <span class="method-start">8665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickMovieLinkThreeTest</span>
+                <span class="method-start">9627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieThreePageTitleTest</span>
+                <span class="method-start">11497 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieThreeOverviewTest</span>
+                <span class="method-start">11627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieThreeOneActor1Test</span>
+                <span class="method-start">11712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieThreeOneActor2Test</span>
+                <span class="method-start">11786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyReleaseThreeDateOneTest</span>
+                <span class="method-start">11836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickMovieLinkFourTest</span>
+                <span class="method-start">12485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFourPageTitleTest</span>
+                <span class="method-start">13472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFourOverviewTest</span>
+                <span class="method-start">14261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFourOneActor1Test</span>
+                <span class="method-start">14301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFourOneActor2Test</span>
+                <span class="method-start">19615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyReleaseFourDateOneTest</span>
+                <span class="method-start">24681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickMovieLinkFiveTest</span>
+                <span class="method-start">24714 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFivePageTitleTest</span>
+                <span class="method-start">29775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFiveOverviewTest</span>
+                <span class="method-start">29807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovievOneActor1Test</span>
+                <span class="method-start">29838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMovieFiveOneActor2Test</span>
+                <span class="method-start">34859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyReleaseFiveDateOneTest</span>
+                <span class="method-start">39944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">39975 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

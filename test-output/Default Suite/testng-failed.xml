@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test name="TCM_assignment(failed)">
+    <classes>
+      <class name="com.tcm.TCMDemoTest">
+        <methods>
+          <include name="clickMovieLinkFiveTest"/>
+          <include name="verifyReleaseFourDateOneTest"/>
+          <include name="tearDownTest"/>
+          <include name="verifyReleaseFiveDateOneTest"/>
+          <include name="setUpTest"/>
+          <include name="verifyMovieFivePageTitleTest"/>
+          <include name="verifyMovieFourOneActor2Test"/>
+          <include name="verifyMovieFourPageTitleTest"/>
+          <include name="verifyMovieFiveOneActor2Test"/>
+          <include name="verifyMovieFourOneActor1Test"/>
+          <include name="verifyMovieFourOverviewTest"/>
+          <include name="verifyMovievOneActor1Test"/>
+          <include name="verifyMovieFiveOverviewTest"/>
+          <include name="verifyMoviePageTitleTest"/>
+        </methods>
+      </class> <!-- com.tcm.TCMDemoTest -->
+    </classes>
+  </test> <!-- TCM_assignment(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

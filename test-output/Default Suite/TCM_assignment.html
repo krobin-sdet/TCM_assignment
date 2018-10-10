@@ -1,0 +1,851 @@
+<html>
+<head>
+<title>TestNG:  TCM_assignment</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TCM_assignment</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 10 09:29:49 EDT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>40 seconds (40780 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.clickMovieLinkFiveTest()'><b>clickMovieLinkFiveTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;The Secret Garden (1949)&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=The Secret Garden (1949)}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.clickMovieLinkFive(TCMTests.java:209)
+	at com.tcm.TCMDemoTest.clickMovieLinkFiveTest(TCMDemoTest.java:159)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1650955365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1650955365'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;The Secret Garden (1949)&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=The Secret Garden (1949)}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.clickMovieLinkFive(TCMTests.java:209)
+	at com.tcm.TCMDemoTest.clickMovieLinkFiveTest(TCMDemoTest.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>5</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFiveOneActor2Test()'><b>verifyMovieFiveOneActor2Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Aubrey Mather&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Aubrey Mather}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFiveActor2(TCMTests.java:236)
+	at com.tcm.TCMDemoTest.verifyMovieFiveOneActor2Test(TCMDemoTest.java:179)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace859123506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859123506'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Aubrey Mather&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Aubrey Mather}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFiveActor2(TCMTests.java:236)
+	at com.tcm.TCMDemoTest.verifyMovieFiveOneActor2Test(TCMDemoTest.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>5</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFiveOverviewTest()'><b>verifyMovieFiveOverviewTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [A small-town girl hits the big city in search of romance Roaring Twenties style.] but found [An orphaned girl changes the lives of those she encounters at a remote estate.]
+	at com.tcm.TCMTests.verifyMovieFiveOverview(TCMTests.java:225)
+	at com.tcm.TCMDemoTest.verifyMovieFiveOverviewTest(TCMDemoTest.java:169)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace99770475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace99770475'><pre>java.lang.AssertionError: expected [A small-town girl hits the big city in search of romance Roaring Twenties style.] but found [An orphaned girl changes the lives of those she encounters at a remote estate.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyMovieFiveOverview(TCMTests.java:225)
+	at com.tcm.TCMDemoTest.verifyMovieFiveOverviewTest(TCMDemoTest.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFivePageTitleTest()'><b>verifyMovieFivePageTitleTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [THOROUGHLY MODERN MILLIE] but found [THE SECRET GARDEN]
+	at com.tcm.TCMTests.verifyMovieFivePageTitle(TCMTests.java:219)
+	at com.tcm.TCMDemoTest.verifyMovieFivePageTitleTest(TCMDemoTest.java:164)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace493944943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace493944943'><pre>java.lang.AssertionError: expected [THOROUGHLY MODERN MILLIE] but found [THE SECRET GARDEN]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyMovieFivePageTitle(TCMTests.java:219)
+	at com.tcm.TCMDemoTest.verifyMovieFivePageTitleTest(TCMDemoTest.java:164)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFourOneActor1Test()'><b>verifyMovieFourOneActor1Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Hampton Fancher&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Hampton Fancher}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFourActor1(TCMTests.java:187)
+	at com.tcm.TCMDemoTest.verifyMovieFourOneActor1Test(TCMDemoTest.java:142)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace747870628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace747870628'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Hampton Fancher&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Hampton Fancher}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFourActor1(TCMTests.java:187)
+	at com.tcm.TCMDemoTest.verifyMovieFourOneActor1Test(TCMDemoTest.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>5</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFourOneActor2Test()'><b>verifyMovieFourOneActor2Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pamela Austin&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Pamela Austin}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFourActor2(TCMTests.java:193)
+	at com.tcm.TCMDemoTest.verifyMovieFourOneActor2Test(TCMDemoTest.java:147)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396385390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1396385390'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Pamela Austin&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Pamela Austin}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFourActor2(TCMTests.java:193)
+	at com.tcm.TCMDemoTest.verifyMovieFourOneActor2Test(TCMDemoTest.java:147)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>5</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFourOverviewTest()'><b>verifyMovieFourOverviewTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [A small-town girl hits the big city in search of romance Roaring Twenties style.] but found [A rebellious teacher moves to Rome and finds love.]
+	at com.tcm.TCMTests.verifyMovieFourOverview(TCMTests.java:182)
+	at com.tcm.TCMDemoTest.verifyMovieFourOverviewTest(TCMDemoTest.java:137)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1523084197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523084197'><pre>java.lang.AssertionError: expected [A small-town girl hits the big city in search of romance Roaring Twenties style.] but found [A rebellious teacher moves to Rome and finds love.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyMovieFourOverview(TCMTests.java:182)
+	at com.tcm.TCMDemoTest.verifyMovieFourOverviewTest(TCMDemoTest.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieFourPageTitleTest()'><b>verifyMovieFourPageTitleTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [ROME ADVENTURE]
+	at com.tcm.TCMTests.verifyMovieFourPageTitle(TCMTests.java:176)
+	at com.tcm.TCMDemoTest.verifyMovieFourPageTitleTest(TCMDemoTest.java:132)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901689694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901689694'><pre>java.lang.AssertionError: expected [] but found [ROME ADVENTURE]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyMovieFourPageTitle(TCMTests.java:176)
+	at com.tcm.TCMDemoTest.verifyMovieFourPageTitleTest(TCMDemoTest.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMoviePageTitleTest()'><b>verifyMoviePageTitleTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [TO HAVE AND HAVE NOT]
+	at com.tcm.TCMTests.verifyMoviePageTitle(TCMTests.java:50)
+	at com.tcm.TCMDemoTest.verifyMoviePageTitleTest(TCMDemoTest.java:36)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1321115948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1321115948'><pre>java.lang.AssertionError: expected [] but found [TO HAVE AND HAVE NOT]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyMoviePageTitle(TCMTests.java:50)
+	at com.tcm.TCMDemoTest.verifyMoviePageTitleTest(TCMDemoTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovievOneActor1Test()'><b>verifyMovievOneActor1Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Margaret O&apos;Brien&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Margaret O&apos;Brien}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFiveActor1(TCMTests.java:230)
+	at com.tcm.TCMDemoTest.verifyMovievOneActor1Test(TCMDemoTest.java:174)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1052768296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1052768296'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Margaret O&apos;Brien&quot;}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Kishas-iMac.local&apos;, ip: &apos;10.0.0.90&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.5&apos;, java.version: &apos;9.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8), userDataDir=/var/folders/kz/jbf7x2tx4q7cfqjwsf5jbh1w0000gn/T/.org.chromium.Chromium.eAJKF7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c48b3d1492da15c00b6bbf96843a73f5
+*** Element info: {Using=link text, value=Margaret O&apos;Brien}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:461)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at com.tcm.TCMTests.verifyMovieFiveActor1(TCMTests.java:230)
+	at com.tcm.TCMDemoTest.verifyMovievOneActor1Test(TCMDemoTest.java:174)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>5</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyReleaseFiveDateOneTest()'><b>verifyReleaseFiveDateOneTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [1967] but found [1949]
+	at com.tcm.TCMTests.verifyReleaseDateFive(TCMTests.java:244)
+	at com.tcm.TCMDemoTest.verifyReleaseFiveDateOneTest(TCMDemoTest.java:184)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503595296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503595296'><pre>java.lang.AssertionError: expected [1967] but found [1949]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyReleaseDateFive(TCMTests.java:244)
+	at com.tcm.TCMDemoTest.verifyReleaseFiveDateOneTest(TCMDemoTest.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyReleaseFourDateOneTest()'><b>verifyReleaseFourDateOneTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td><div><pre>java.lang.AssertionError: expected [1967] but found [1962]
+	at com.tcm.TCMTests.verifyReleaseDateFour(TCMTests.java:201)
+	at com.tcm.TCMDemoTest.verifyReleaseFourDateOneTest(TCMDemoTest.java:152)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace144699438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace144699438'><pre>java.lang.AssertionError: expected [1967] but found [1962]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.tcm.TCMTests.verifyReleaseDateFour(TCMTests.java:201)
+	at com.tcm.TCMDemoTest.verifyReleaseFourDateOneTest(TCMDemoTest.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></div></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.clickMovieLinkFourTest()'><b>clickMovieLinkFourTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.clickMovieLinkOneTest()'><b>clickMovieLinkOneTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>1</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.clickMovieLinkThreeTest()'><b>clickMovieLinkThreeTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>1</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.clickMovieLinkTwoTest()'><b>clickMovieLinkTwoTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>1</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.loadTestUrlTest()'><b>loadTestUrlTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>3</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieOneActor1Test()'><b>verifyMovieOneActor1Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieOneActor2Test()'><b>verifyMovieOneActor2Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieOverviewTest()'><b>verifyMovieOverviewTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieThreeOneActor1Test()'><b>verifyMovieThreeOneActor1Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieThreeOneActor2Test()'><b>verifyMovieThreeOneActor2Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieThreeOverviewTest()'><b>verifyMovieThreeOverviewTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieThreePageTitleTest()'><b>verifyMovieThreePageTitleTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieTwoOneActor1Test()'><b>verifyMovieTwoOneActor1Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieTwoOneActor2Test()'><b>verifyMovieTwoOneActor2Test</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieTwoOverviewTest()'><b>verifyMovieTwoOverviewTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyMovieTwoPageTitleTest()'><b>verifyMovieTwoPageTitleTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyPageTitleTest()'><b>verifyPageTitleTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyReleaseDateOneTest()'><b>verifyReleaseDateOneTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyReleaseThreeDateOneTest()'><b>verifyReleaseThreeDateOneTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+<tr>
+<td title='com.tcm.TCMDemoTest.verifyReleaseTwoDateOneTest()'><b>verifyReleaseTwoDateOneTest</b><br>Test class: com.tcm.TCMDemoTest</td>
+<td></td>
+<td>0</td>
+<td>com.tcm.TCMDemoTest@3c435123</td></tr>
+</table><p>
+</body>
+</html>
